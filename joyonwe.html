@@ -1,0 +1,362 @@
+<!doctype html>
+    <html>
+        <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+            <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+            <meta charset="utf-8">
+            <meta name ="viewport" content="width=device-width, initial-scale=1">
+            <title>My Web Page</title>
+            <style>
+                body {
+                    font-family: Montserrat;
+                    margin:0;
+                    background: whitesmoke;
+                }
+                p, a{
+                    font-size: 16px;
+                }
+                h1, h2, h3, h4{
+                    font-weight: normal;
+                }
+                .banner{
+                    width: 100%;
+                    height: 100vh;
+                    background: linear-gradient(rgba(0,0,0,0.5), rgba(0, 0, 0, 0.5)),url('images/banner.jpg');
+                    color: white;
+                    font-size: 24px; 
+                    background-size: cover;
+                    background-position: top right;
+                    background-attachment: fixed;
+                }
+                .banner-content {
+                    width:80%;
+                    margin-left:10%;
+                    padding-top: 50px;;
+                }
+                .banner-content h1 {
+                    margin: 0;
+                }
+                .firstnav{
+                    display:table;
+                    width: 100%;
+                    background:white;
+                    padding:0px 20px;
+                    color:rgb(15, 15, 15);
+                }
+                .header{
+                    width:20%;
+                    float:left;
+                    color: #4e42f5;
+                    font-weight: normal;
+                }
+                .navbar{
+                    width: 50%;
+                    float:left;
+                    margin-left: 6%;
+                }
+                .navbar a{
+                    display: block;
+                    float: left;
+                    text-decoration: none;
+                    padding: 10px;
+                    font-size:14px;
+                    color: black;
+                }
+                .social_divs{
+                    float:right;
+                    width:20%;
+                }
+                .social_divs a{
+                    display: block;
+                    float: right;
+                    color:black;
+                    text-decoration: none;
+                    font-size: 14px;
+                    padding: 10px;
+                }
+            .navbar, .social_divs{
+                padding-top:30px;
+            }
+
+            .intro a{
+                color:white;
+                background: #4e42f5;
+                padding: 10px;
+                text-decoration: none;
+            }
+            .intro{
+                width: 40%;
+                padding-top: 10%;
+            }
+            .intro h1{
+                font-weight: normal;
+            }
+            .about_divs{
+                display: table;
+                float: left;
+                width: 45%;
+                margin-right: 5%;
+                height: 500px;
+            }
+            .about_image{
+                background: url('images/about.jpg');
+                background-size: cover;
+                background-position: center;
+                border-radius: 20px;
+            }
+            .about{
+                padding-top:50px;
+                width: 80%;
+                margin-left: 10%;
+            }
+            .my_divs{
+                padding-top:50px;
+                width: 80%;
+                margin-left: 10%;
+                clear:left
+            }
+            .titles, .sub_titles{
+                text-align: center;
+                font-weight: normal;
+            }
+            .titles{
+                color:#4e42f5;
+                margin-bottom: 0;
+            }
+            
+            .edu_image{
+                background: url('images/edu.jpg');
+                background-size: cover;
+                background-position: center;
+                border-radius: 20px;
+            }
+            .edu_divs{
+                width: 40%;
+                background: white;
+                display: table;
+                padding: 50px 20px;
+                text-align: left;
+                float: left;
+                margin: 0 2.5%;
+            }
+            .education{
+                background: linear-gradient(rgba(0,0,00,0.5), rgba(0,0,0,0.5)),url('images/edu.jpg');
+                display: table;
+                width: 100%;
+                padding: 50px 0%;
+                padding-right:0;
+                background-size: cover;
+                background-repeat: no-repeat;
+                background-attachment: fixed;
+            }
+            .edu_main{
+                width: 80%;
+                margin-left: 10%;
+            }
+            .education .titles, .education .sub_titles{
+                color: white;
+            }
+            .the_int_div{
+                width: 48%;
+                margin:0 1%;
+                display: table;
+                float: left;
+                margin-bottom: 50px;
+            }
+            .progress_bar{
+                width: 100%;
+                background: white;
+            }
+            .progress_percent{
+                padding: 5px;
+                background: #4e42f5;
+            }
+            .projects_divs{
+                width: 28%;
+                margin:20px 1%;
+                float: left;
+                background-size: cover !important;
+                background-position: center !important;
+                display: table;
+                height: 400px;
+                color:white;
+                padding: 1%;
+            }
+            .projects_divs h1{
+                margin-top: 80%;
+            }
+            .projects_divs a{
+                color: white;
+                text-decoration: none;
+            }
+            .projects_divs a:hover{
+                font-weight: bold;
+            }
+            input, textarea{
+                width: 100%;
+                border: 1px solid #4e42f5;
+                border-radius: 5px;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+            input:focus, textarea:focus{
+                outline:none;
+            }
+            textarea{
+                height:200px;
+            }
+            .contact button{
+                background: #4e42f5;
+                color:white;
+                border:0;
+                padding: 10px;
+                display: block;
+                width: 50%;
+                margin-left: 25%;
+                border-radius: 5px;
+            }
+            .contact{
+                margin-bottom: 50px;
+            }
+            </style>
+        </head>
+        <body>
+            <div class="banner">
+                <div class="banner-content">
+                    <div class="firstnav">
+                        <h3 class="header">Onwe Joy A </h3>
+                        <div class="navbar">
+                            <a href="#home">Home</a>
+                            <a href="#about">About</a>
+                            <a href="#education">Education</a>
+                            <a href="#interest">Interest</a>
+                            <a href="#projects">Projects</a>
+                            <a href="#contact">Contact</a>
+                        </div>
+                        <div class="social_divs">
+                            <a href="https://www.facebook.com/share/1GSKUY5YiW/"><i class="bi bi-facebook"></i></a>
+                            <a href="https://x.com/proxie_2"><i class="bi bi-twitter-x"></i></a>
+                            <a href="https://www.tiktok.com/@thee_proxie?_t=ZM-8yZuuMlO8F6&_r=1"><i class="bi bi-tiktok"></i></a>
+                        </div>
+                </div>
+
+                <div class="intro">
+                    <h1>Hi, I'm Joy </h1>
+                    <p>A motivated and goal-oriented individual with a strong passion for both academic excellence and digital innovation. With a foundation in law and a growing skill set in Python, web development, and content creation, I strive to bridge the gap between creativity and problem-solving. Recognized for my achievements in national essay competitions and currently undergoing tech training with Power Learn Project Africa, I bring a balanced blend of analytical thinking, effective communication, and project leadership to every opportunity I pursue.</p>
+                    <a href="images/joycv.pdf" download>Download CV</a>
+                </div>
+            </div>
+        </div>
+
+            <div class="about my_divs" id="about">
+                <div class="about_divs about_image">
+                    
+                </div>
+                <div class="about_divs">
+                    <h3>ABOUT</h3>
+                    <p>I’m Onwe Joy A., a passionate and purpose-driven individual with a unique blend of academic excellence, creative storytelling, and technical skills. Currently studying Law at Ebonyi State University, I bring with me a rich background in essay writing, having won prestigious competitions like the NIPOST Essay Competition and the Own Your Future Essay Challenge at Ahmadu Bello University.</p>
+                    <p>Alongside my academic pursuits, I’m also building solid expertise in web development, Python programming, graphic design, and content creation, with active training at Power Learn Project Africa. I take pride in my ability to manage teams, lead projects, and create visually engaging, user-focused digital experiences. Fluent in English, Igbo, and Ezillo, I thrive in cross-cultural environments where communication and innovation matter most. </p>
+            </div>
+
+            <div class="education" id="education">
+                <h1 class="titles">My Education</h1>
+                <p class="sub_titles">Check out the education I've gone through</p>
+                <div class="edu_main">
+                <div class="edu_divs">
+                    <h1><i class="bi bi-escape"></i></h1>
+                    <p>Primary School</p>
+                </div>
+                <div class="edu_divs">
+                    <h1><i class="bi bi-mortarboard"></i></h1>
+                    <p>Secondary School</p>
+                </div>
+            </div>
+            </div>
+            <div class="interest my_divs" id="interest">
+                <div class="the_int_div">
+                    <h1>My Interest</h1>
+                    <p>I have a strong interest in legal research, writing, and public speaking, especially through essay competitions. I'm passionate about technology and enjoy building digital solutions using Python and web development tools. I also love expressing creativity through graphic design and content creation. Collaborating with others and leading impactful projects are experiences I find deeply fulfilling.</p>
+                </div>
+                <div class="the_int_div">
+                    <p class="sub_titles" style="text-align: left;">My Interest</p>
+
+                    <div class="interests">
+                        <p>Writing (50%)</p>
+                        <div class="progress_bar">
+                            <div class="progress_percent" style="width: 50%;">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interests">
+                        <p>Reading (90%)</p>
+                        <div class="progress_bar">
+                            <div class="progress_percent" style="width: 90%;">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interests">
+                        <p>Video Editing (20%)</p>
+                        <div class="progress_bar">
+                            <div class="progress_percent" style="width: 20%;">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interests">
+                        <p>Movies (80%)</p>
+                        <div class="progress_bar">
+                            <div class="progress_percent" style="width: 80%;">
+                                
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="interests">
+                        <p>Working (75%)</p>
+                        <div class="progress_bar">
+                            <div class="progress_percent" style="width: 75%;">
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+<div class="projects my_divs" id="projects">
+    <h1 class="titles">My Projects</h1>
+    <p class="sub_titles">Check out my projects</p>
+    <div class="projects_divs" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/project1.jpg');">
+        <h1>Project 1</h1>
+        <a href="">Go-to Project</a>
+    </div>
+    <div class="projects_divs" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/project2.jpg')">
+        <h1>Project 2</h1>
+        <a href="">Go-to Project</a>
+    </div>
+    <div class="projects_divs" style="background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('images/project3.jpg');">
+        <h1>Project 3</h1>
+        <a href="">Go-to Project</a>
+    </div>
+</div>
+
+<div class="contact my_divs" id="contact">
+    <h1 class="titles">Contact</h1>
+    <p class="sub_titles">Reach out via the form below</p>
+    <form method="post">
+        <input type="text" placeholder="Enter Full Name" name="fullname">
+        <input type="text" placeholder="Enter Email Address" name="email">
+        <textarea placeholder="Enter Your Message" name="message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+    
+</div>
+        </body>
+    </html>
